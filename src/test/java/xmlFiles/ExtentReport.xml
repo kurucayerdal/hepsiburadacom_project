@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extentreports>
+    <configuration>
+        <theme>standard</theme>
+        <encoding>defaults</encoding>
+        <protokol>https</protokol>
+        <documentTitle>HepsiBurada.com Project Extent Report</documentTitle>
+        <reportName>HepsiBurada.com Report</reportName>
+        <dateFormat>yyy-MM-dd</dateFormat>
+        <timeFormat>HH:mm:ss</timeFormat>
+    </configuration>
+
+</extentreports>
