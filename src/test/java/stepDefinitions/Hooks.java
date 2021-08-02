@@ -32,6 +32,7 @@ public class Hooks {
 
         LocalDateTime dateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy-HH:mm:ss");
+        String time = dateTime.format(formatter);
 
         if (scenario.isFailed()) {
             TakesScreenshot screenshot = (TakesScreenshot) BaseDriver.getDriver();
@@ -39,7 +40,7 @@ public class Hooks {
 
             try {
                 FileUtils.copyFile(screenshotFile,
-                        new File("target/failedScreenshots/" + scenario.getId() + dateTime.format(formatter) + ".png"));
+                        new File("target/failedScreenshots/" + scenario.getId() + time+ ".png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
